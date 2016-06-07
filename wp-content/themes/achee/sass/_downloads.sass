@@ -1,0 +1,46 @@
+.filter-downloads
+	.card-title
+		color: $brand-color
+		font-weight: 700
+		font-size: 1.2rem
+
+.entry-title.title-cat-download
+	font-size: 1.3rem
+	color: #444
+	text-transform: none
+
+.download-cat-item
+	.collapsible-header
+		font-weight: 600
+		color: $darker-gray
+		font-size: 1rem
+	.down-icon
+		font-size: 1rem
+	.collection-links
+		text-align: right		
+	.collection-item p
+		padding: 0 0 10px 0
+		margin: 0
+		font-size: 0.85rem
+		color: rgba(0,0,0,.71)
+		//font-family: $ubuntu
+	.collection-title 
+		font-weight: 600
+		font-size: 1.1rem
+		margin-top: 6px
+		margin-bottom: 18px
+		color: $brand-gray
+	.thumb		
+		+border-radius(3px)		
+		margin-top: 5px
+		width: 105px
+		height: 140px
+	&.active
+		.down-icon:before
+			content: "\f078"
+
+
+
+#modal-downloads
+	h4
+		font-size: 1.3rem

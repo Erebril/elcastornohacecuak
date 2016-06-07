@@ -1,0 +1,209 @@
+/* Content */
+.tag-archive
+	>.col
+		&:last-of-type
+			.border
+				display: none
+
+.catArchive
+	&.title
+		*
+			color: #8EC043
+			font-size: 1.35rem
+			font-weight: 700
+			text-transform: uppercase
+.catDescription
+	*
+		font-size: 0.85rem
+		color: $brand-gray
+
+.page-header
+	margin-bottom: 25px
+	.catArchive
+		.page-title
+			margin-bottom: 5px
+	.catDescription
+		*
+			margin: 7.5px 0
+
+article
+	.entry-header
+		.entry-title
+			font-size: 1.8rem
+			line-height: 2.15rem
+			*
+				color: $brand-color
+
+.content-area
+	.collection
+		margin-top: 0
+	.site-main
+		.noContent
+			.valign,
+			.card-panel
+				width: 100%
+			.card-panel
+				margin-top: 0
+			.row
+				margin-top: 45px
+				margin-bottom: 45px
+
+.card
+	.card-title
+		background: none
+		border-bottom: 1px solid $white
+		@extend .setLeft
+		margin-bottom: 25px
+		padding-bottom: 10px
+
+	.card-title,
+	.card-title a
+		color: #1976d2
+
+	a
+		color: #039be5
+		margin-right: 0
+		-webkit-transition: color 0.3s ease
+		-moz-transition: color 0.3s ease
+		-o-transition: color 0.3s ease
+		-ms-transition: color 0.3s ease
+		transition: color 0.3s ease
+		text-transform: uppercase
+
+		&:hover
+			color: #64b5f6
+
+	.card-content
+		p
+			font-size: 0.95rem
+			margin: 5px 0 10px
+		.chip
+			margin-left: 15px
+
+	.card-action
+		background: $lightest-gray
+		@extend .setLeft
+		.btn
+			color: $white
+
+#secondary
+	.widget-title
+		background: #2196f3
+		color: $white
+		font-size: 2rem
+		line-height: 1.9rem
+		margin: 0 0 1.424rem
+		padding: 15px
+
+.nav-links
+	.btn
+		background: #2196f3
+
+h2.comments-title,
+h3#reply-title
+	color: $white
+	background: #2196f3
+	padding: 0 20px
+
+.btn,
+.btn-large
+	text-decoration: none
+	color: $white
+	background-color: #2196f3
+	text-align: center
+	letter-spacing: 0.5px
+	-webkit-transition: 0.2s ease-out
+	-moz-transition: 0.2s ease-out
+	-o-transition: 0.2s ease-out
+	-ms-transition: 0.2s ease-out
+	transition: 0.2s ease-out
+	cursor: pointer
+
+.depth-2
+	border-left: 5px solid #64b5f6
+
+.site-info
+	padding: 20px
+	background: #2196f3
+	color: $white
+
+.site-info a
+	color: $white
+
+
+/* Contacto */
+.clasic-input
+	background-color: $white
+	+border-radius($radius: 0px)
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3)
+	color: darken($dark-gray, 5%)
+	display: block
+	border: none
+	font-size: .9rem
+	height: 2.3rem
+	padding: 5px 10px
+	text-transform: uppercase
+	.holder
+		display: none
+	&:focus
+		outline: none
+	&#select-forms
+		float: right
+		@media screen and (min-width: 768px)
+			max-width: 320px
+
+
+
+.columns
+	@extend .setLeft
+	margin-top: 25px
+	margin-bottom: 65px
+	h1, h2, h3, h4, h5, h6
+		color: $brand-color
+		height: 34px
+		line-height: 2rem
+		margin: 20px 0 30px
+		.fa
+			float: left
+			margin-right: 10px
+			&.fa-envelope
+				font-size: 1.75rem
+			&.fa-share-square-o
+				font-size: 1.85rem
+			&.fa-map
+				font-size: 1.7rem
+		.fa-stack
+			margin-top: -5px
+			margin-right: 5px
+			.fa-inverse
+				line-height: 2.5rem!important
+	p
+		color: $dark-gray
+		font-size: 1rem
+		line-height: 1.35rem
+		text-transform: justify
+		margin-bottom: 10px
+	a
+		color: $brand-color
+		font-weight: 600
+		&:hover,
+		&:focus,
+		&:active
+			color: $dark-green
+	.mail
+		h1, h2, h3, h4, h5, h6
+			margin: 35px 0 20px
+	.nointerlined
+		p
+			margin-top: 0
+			margin-bottom: 0
+			&:last-of-type
+				margin-bottom: 35px
+	.pages-rs
+		.widget.achee-rs
+			margin: 10px 10px 0 0
+
+.map
+	.row
+		margin-top: 25px
+		margin-bottom: -25px

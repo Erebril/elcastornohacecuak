@@ -1,0 +1,19 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /wp/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wp/index.php [L]
+</IfModule>
+
+# END WordPress
+
+RewriteCond %{HTTP_HOST} ^acee\.cl$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.acee\.cl$
+RewriteRule ^licitaciones\/unidad\-de\-asistencia\-t\-cnica\-para\-el\-programa\-de\-eficiencia\-energ\-tica\-en\-edificios\-p$ "http\:\/\/old\.acee\.cl\/licitaciones\/unidad\-de\-asistencia\-t\-cnica\-para\-el\-programa\-de\-eficiencia\-energ\-tica\-en\-edificios\-p" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.acee\.cl$
+RewriteRule ^licitaciones\/unidad\-\ de\-asistencia\-t\-cnica\ \-para\-el\-programa\-de\-\ eficiencia\-energ\-tica\ \-en\-edificios\-p$ "http\:\/\/old\.acee\.cl\/licitaciones\/unidad\-\ de\-asistencia\-t\-cnica\ \-para\-el\-programa\-de\-\ eficiencia\-energ\-tica\ \-en\-edificios\-p" [R=301,L]
+

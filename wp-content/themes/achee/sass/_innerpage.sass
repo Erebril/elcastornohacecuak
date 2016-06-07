@@ -1,0 +1,402 @@
+.imgBanner
+	position: relative
+	z-index: 1
+	.bannerTitles
+		height: 280px
+		position: absolute
+		//background: rgba(0, 0, 0, .6)
+		box-shadow: inset 0 12px 18px 0px rgba(0, 0, 0, 0.45)
+		left: 0
+		top: 0
+		width: 100%
+		@media screen and (min-width: 1400px)
+			height: 310px   		
+		@media screen and (min-width: 1520px)
+			height: 340px
+		.banner-title
+			width: 100%
+			//@extend .setLeft
+			//*
+			color: $white
+			text-align: left			
+			.title
+				color: $white
+				font-weight: 700
+				text-transform: uppercase
+				text-shadow: 1px 1px 0 rgba(0,0,0,.75)
+				margin: 20px 0 5px
+				font-size: 2.1rem
+				@media screen and (max-width: 992px)					
+					margin-top: 0
+					font-size: 2.0rem
+				@media screen and (max-width: 700px)
+					font-size: 1.6rem
+				@media screen and (max-width: 400px)
+					font-size: 1.5rem
+			.subtitle
+				color: $white
+				font-size: 1.15rem
+				//margin: 0 auto
+				text-align: left
+				text-shadow: 1px 1px 0 rgba(0,0,0,.65)
+				width: 50%
+				h5
+					margin-top: 0		
+				@media screen and (max-width: 700px)
+					font-size: 1.0rem	
+				@media screen and (max-width: 400px)
+					font-size: 0.98rem
+
+
+
+
+
+// mixin breadcrums
+// subir breadcrums cuando no haya imagen en header
+=breadcrum_fix()
+	#content-wrapper
+		margin-top: 10px
+	.nav-main-wrapper
+		.secondMenu-navigation
+			.secondary-navigation
+				height: 0
+
+.search-no-results,
+.search-results,
+.error404,
+.page-template-plantilla-noticias,
+.page-template-plantilla-descargas,
+.page-template-plantilla-contacto,
+.page-template-plantilla-sin-imagen,
+.page-template-plantilla-area-accion,
+.page-template-plantilla-area-accion-page,
+.page-template-default,
+.single
+	+breadcrum_fix()
+
+// En pagina padre e hijos
+// subir breadcrum entre imagen y contenido
+=breadcrum_fix2()
+	.content-overall
+		margin-top: -25px
+		
+//.archive,
+//.single,
+.page-parent,
+.page-child,
+	+breadcrum_fix2
+
+#content-wrapper
+	z-index: 10
+	position: relative
+	&.without-image
+		//margin-top: 100px
+		//z-index: 100
+
+.page-header
+	.page-title
+		color: $brand-color
+		strong
+			font-weight: 700
+
+.entry-header
+	.entry-title
+		color: $brand-color
+		font-weight: 700
+		margin: 0 0 0.7rem
+		text-transform: uppercase
+	&.noticias
+		.entry-title
+			margin-bottom: 25px
+
+.entry-content
+	margin-top: 0.25rem
+	a
+		color: $brand-color
+		font-weight: 600
+		&:hover
+			color: $darker-green
+
+	.tabs
+		li			
+			a
+				color: $brand-orange
+				font-size: 0.8rem				
+				display: block
+				line-height: 1.5				
+				white-space: pre-line
+				padding-top: 10px
+				padding-bottom: 10px
+				&:hover
+					color: $brand-gray
+				&.active
+					color: darken($brand-orange,20%)			
+		.indicator
+			background-color: $brand-orange
+			@media screen and (max-width: 909px)
+				display: none
+	.tab-content
+		padding-top: 30px
+
+
+	// Tablas destacadas
+
+	//striped table	
+	table > tbody > tr:nth-child(2n+1)
+		background-color: #f2f2f2
+
+	// bordered table
+	table > thead > tr,
+	table > tbody > tr
+		border-bottom: 1px solid #d0d0d0
+
+	// hr linea marcada separadora
+	hr
+		border-bottom: 1px solid $brand-gray
+
+
+
+article.post
+	.entry-header
+		.entry-title
+			font-weight: 500
+			text-transform: none
+			margin-bottom: 1rem
+
+.green-title
+	color: darken($brand-color, 10%)
+	font-family: $titillium
+	font-weight: 600
+
+.collection
+	&.with-header
+		.collection-header
+			strong
+				font-weight: 700
+	.collection-item
+		&.avatar
+			min-height: 70px
+			i
+				margin-top: 5px
+
+.plantilla
+	&.licitacion
+		h5
+			margin: 0
+
+.page-related
+	@extend .setLeft
+	.title
+		h1,h2,h3,h4,h5,h6
+			color: $brand-color
+			font-size: 1.35rem
+			font-weight: 700
+			text-transform: uppercase
+			line-height: 3rem
+	img.circle
+		border: 4px solid $white
+		box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.3)
+		margin-bottom: 15px
+	.subtitle
+		color: $brand-color
+		font-weight: 700
+	p
+		color: $dark-gray
+		font-size: .85rem
+		text-align: justify
+
+.page-pagination
+	@extend .setLeft
+	margin-top: 10px
+	ul.pagination
+		width: auto
+		float: right
+		margin: 0
+		li
+			&.active
+				background: $brand-color
+				a
+					color: $white
+			a
+				color: $brand-color
+			span
+				color: $white
+			.dots
+				color: $brand-color
+
+.entry-footer
+	@extend .setLeft
+	margin: 25px 0 45px
+	.tags-links
+		color: $brand-color
+		font-weight: 600
+		&:before
+			content: "\f02b"
+			font-family: 'FontAwesome'
+			margin-right: 5px
+		a
+			line-height: 1.5rem
+			color: $brand-color
+			font-weight: 600
+			+transition(color, .25s, ease)
+			margin-left: 5px
+			&:hover,
+			&:focus,
+			&:active
+				color: $darker-green
+				+transition(color, .25s, ease)
+			&:visited
+				color: $brand-color
+	.edit-link
+		float: right
+		width: auto
+		a.post-edit-link
+			color: lighten($plain-gray, 15%)
+			line-height: 1.5rem
+			&:hover
+				opacity: .65
+			.fa
+				height: 15px
+				margin-top: 5px
+				margin-right: 5px
+
+.pages-rs
+	@extend .setLeft
+	.widget.achee-rs
+		float: left
+		margin: 1.5em 5px 1em 0
+		small
+			display: none
+		a
+			&:before
+				display: none
+			&:hover
+				opacity: .65
+			.social-icon
+				height: 2em
+				&:before
+					@extend .setLeft
+					margin-top: 8px
+			.fa-circle
+				text-shadow: 1px 1px 4px rgba(51, 51, 51, 0.45)
+			&.fa-facebook,
+			&.fa-facebook-official,
+			&.fa-facebook-square
+				color: #4d66a4
+			&.fa-twitter,
+			&.fa-twitter-square
+				color: #2ba7e2
+			&.fa-google,
+			&.fa-google-plus,
+			&.fa-google-plus-square
+				color: #d54a38
+			&.fa-linkedin,
+			&.fa-linkedin-square
+				color: #047aae
+			&.fa-envelope,
+			&.fa-envelope-o
+				color: #6e6f73
+			&.fa-youtube-square,
+			&.fa-youtube-play,
+			&.fa-youtube
+				color: #cd181f
+
+div[class^="wds_slideshow_image_wrap_"]
+	div[class^="wds_slideshow_image_container_"]
+		border: 6px solid $lightest-gray
+		div[class^="wds_slideshow_dots_container_"]
+			div[class^="wds_slideshow_dots_thumbnails_"]
+				margin-bottom: 10px!important
+				div[class^="wds_slideshow_dots_"]
+					+border-radius(10px)
+
+
+
+// Btn desplaza hacia arriba
+.ir-arriba
+	display: none
+	padding: 15px
+	background-color: $brand-color
+	font-size: 20px
+	color: #fff
+	cursor: pointer
+	position: fixed
+	bottom: 20px
+	right: 20px
+	z-index: 1001
+	+box-shadow(0px, 1px, 3px, #333)
+
+
+
+// Table Cursos, Licitacion
+.info-table
+	tbody
+		tr:nth-child(odd)
+			background-color: #ececec
+
+
+.share-networks
+	margin-bottom: 20px
+	h5
+		font-size: 0.9rem
+		margin: 0
+
+
+// Singe slider
+
+.single-slider
+	.site-main
+		.indicators
+			display: none
+
+
+
+// title Areas de acción en single 
+// Curso, Licitación, Linea Apoyo
+.single, 
+.page-template-plantilla-area-accion
+	#action-areas
+		margin-top: 20px
+		.area-item.m4
+			@media (min-width: 992px) and (max-width: 1299px)
+				width: 33.3333333%
+				margin-bottom: 50px
+	.title
+		h4
+			color: $brand-color
+			font-size: 1.35rem
+			font-weight: 700
+			text-transform: uppercase
+			line-height: 3rem
+
+
+// Background Image Page
+.imgBanner
+	.background
+		display: block
+		height: 280px
+		background-size: cover		
+		width: 100%		
+		@media screen and (min-width: 1400px)
+			height: 310px   		
+		@media screen and (min-width: 1520px)
+			height: 340px
+
+
+// Efecto par Overlay en subpaginas
+$color-effect-overlay: rgba(46,72,46,.5)
+$angle-effect: 120deg
+.div-overlay-effect	
+	background-color: $color-effect-overlay
+	height: 280px
+	overflow: hidden
+	+linear-gradient-angle($angle-effect, $color-effect-overlay 57.7%, transparent 50%)
+	padding-top: 50px
+	@media screen and (max-width: 992px)
+		padding-top: 30px
+	@media screen and (min-width: 1400px)
+		//margin-top: 32px
+		height: 310px
+	@media screen and (min-width: 1520px)
+		height: 340px
+		//margin-top: 60px		

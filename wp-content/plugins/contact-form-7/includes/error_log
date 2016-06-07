@@ -1,0 +1,3 @@
+[24-Mar-2016 00:26:01 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/acee/public_html/wp-content/plugins/contact-form-7/includes/mail.php on line 289
+[03-Apr-2016 00:13:17 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/acee/public_html/wp-content/plugins/contact-form-7/includes/mail.php on line 289
+[19-Apr-2016 15:49:49 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/acee/public_html/wp-content/plugins/contact-form-7/includes/mail.php on line 289

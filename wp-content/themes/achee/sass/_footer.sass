@@ -1,0 +1,111 @@
+/* Footer */
+
+footer.page-footer
+	background-color: $dark-gray
+	*
+		color: $white
+	a
+		&:hover
+			color: $brand-color
+	.widget-footer
+		margin-right: 15px
+		&.widget_text
+			font-size: .75rem
+			line-height: 1rem
+			margin-bottom: 35px
+			text-align: justify
+		&.widget_nav_menu
+			.widget-title
+				font-size: 1.2rem
+				font-family: $titillium
+				font-weight: 600
+				height: 45px
+				line-height: 1.3rem
+				margin-bottom: 15px
+				text-shadow: 1px 1px 0px $darker-gray
+			div[class^="menu-footer-"]
+				.menu
+					margin-left: 0
+					li
+						margin-bottom: 10px
+		&:last-of-type
+			margin-right: 0
+		&.widget_text
+			.widget-title
+				font-size: 1.2rem
+				font-family: $titillium
+				font-weight: 600
+		.wpcf7-form
+			input				
+				background: $white
+				height: 34px
+				border-bottom: 4px solid $brand-color
+				margin-bottom: 0
+				&[type="email"]
+					padding: 0px 5%
+					width: 90%
+					color: $brand-gray
+					&:focus
+						color: #111						
+				&[type="submit"]
+					background: $brand-color
+					border-bottom: none
+					+border-radius($radius: 0px)
+					border-color: $brand-color $brand-color #5F5F5F #5F5F5F
+					box-shadow: none
+					float: right
+					font-size: .85rem
+					font-weight: 700
+					line-height: .85rem
+					padding: 1.15em 1.75em 2em
+					text-shadow: 0 1px 0 rgba(128, 128, 128, 0.8)
+					&:hover
+						background: $dark-green
+			.wpcf7-response-output				
+				margin-top: 66px
+				padding: 10px
+			.wpcf7-not-valid-tip
+				font-size: .95rem			
+
+	.footer-info
+		background: $darker-gray
+		height: 84px
+		.row
+			margin-bottom: 0
+		.valign-wrapper
+			height: 84px
+			.icon
+				float: left
+				display: block
+				height: 28px
+				width: 30px
+				.fa
+					font-size: 1.6rem
+			.textwrap
+				display: block
+				float: left
+				height: 35px
+				> p
+					font-size: 0.8rem
+					margin: 0
+					line-height: 1.2rem
+				a
+					&:hover
+						opacity: .45
+			.ico-bco
+				float: right
+				display: block
+				background: url('../img/color-iso.png') no-repeat right center
+				height: 40px
+				width: 100%
+
+
+
+#simpleimage-3
+	float: left
+	width: 40%
+#simpleimage-5
+	float: right
+	width: 40%
+	text-align: right
+	margin-right: 10px

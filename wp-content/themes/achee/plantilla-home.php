@@ -1,0 +1,34 @@
+<?php
+/**
+ * Template Name: Plantilla página de Inicio
+ *
+ * @package achee-theme
+ */
+
+get_header(); ?>
+	<!-- from header had-container -->
+		<div class="row">
+			<?php get_template_part( 'template-parts/content', 'inicio_slide' ); ?>
+		</div><!-- /row -->
+	</div>
+	<div class="container">
+		<div class="row" id="ourlabor">
+			<?php get_template_part( 'template-parts/content', 'inicio_labores' ); ?>
+		</div><!-- /row -->
+		<div class="row" id="action-areas">
+			<?php get_template_part( 'template-parts/content', 'inicio_areas_accion' ); ?>
+		</div><!-- /row -->
+		<div class="row" id="workSections">
+			<?php get_template_part( 'template-parts/content', 'inicio_secciones' ); ?>
+		</div><!-- /row -->
+		<div class="row" id="banners">
+			<?php get_template_part( 'template-parts/content', 'inicio_banners' ); ?>
+		</div>
+		<!-- <div class="row" id="ourSites">
+			<?php //get_template_part( 'template-parts/content', 'inicio_sitios' ); ?>
+		</div> --><!-- /row --> 
+	</div>
+
+	<div class="had-container">
+<?php get_footer(); ?>
+

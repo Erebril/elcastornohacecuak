@@ -1,0 +1,107 @@
+/* custom menu widgets */
+aside.widget_nav_menu
+	margin-bottom: 0
+
+.widget
+	ul.menu
+		//margin: 0 0 1.5rem
+		padding: 0
+
+		li
+			width: 100%
+			border-bottom: 1px solid #eee
+			padding: 10px
+
+			&:last-of-type
+				border-bottom: 0
+
+nav.navigation.post-navigation
+	background: transparent
+	box-shadow: 0 0
+
+.widget-area
+	&#secondary	
+		aside.widget
+			background: $white
+			border-top: 5px solid $brand-color
+			+border-radius($radius: 0px)
+			display: inline-block
+			box-shadow: 0 1px 6px 0px $lighter-gray
+			padding: 5px 15px 10px
+			margin: 0 0 1.5rem
+			.widget-title
+				color: $brand-color
+				background: $white
+				font-size: 1.2rem
+				font-weight: 700
+				padding: 5px 0
+				margin-bottom: 5px
+			ul
+				@extend .setLeft
+				margin: 0
+				li
+					border-bottom: 1px solid $lightest-gray
+					display: inline-block
+					@extend .setLeft
+					margin: 0 0 15px
+					padding-bottom: 15px
+					&:last-of-type
+						border-bottom: none
+						padding-bottom: 0px
+					a
+						@extend .setLeft
+						color: $dark-gray
+						font-size: .85rem
+						&:hover
+							color: $darker-green
+					.post-date
+						color: $black
+						@extend .setLeft
+						font-size: .75rem
+						margin-top: 5px
+			&.rsTwitter
+				border-top: 5px solid $brand-color
+				+border-radius($radius: 0px)
+				margin: 0 0 1.5rem
+				padding: 10px 15px				
+				@media screen and (max-width: 992px)
+					width: 100%
+				.tweet-title
+					color: $brand-color
+					margin: 0
+					font-size: 1.3rem
+					line-height: 1.3rem
+				iframe
+					.timeline[style]
+						width: 100% !important
+						max-width: 100% !important						
+				.widget-title
+					display: none
+				.tweet-title
+					color: $brand-color
+					background: $white
+					font-size: 1.2rem
+					font-weight: 700
+					padding: 5px 0
+					margin-top: 0
+					margin-bottom: 5px					
+				
+
+.widget	
+	&.widget_recent_entries
+		margin: 0 0 1.5rem
+		.widgettitle
+			color: $brand-color
+			font-size: 2rem
+		ul
+			margin-left: 0
+			li
+				margin: 10px 0
+
+
+
+#secondary
+	.widget
+		@media screen and (max-width: 992px)
+			width: 100%
+

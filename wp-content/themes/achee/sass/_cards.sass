@@ -1,0 +1,114 @@
+/* card display */
+
+.card
+	position: relative
+	overflow: hidden
+	margin: 0.5rem 0 2rem 0
+	background-color: $white
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-border-radius: 2px
+	-moz-border-radius: 2px
+	border-radius: 2px
+	background-clip: padding-box
+
+	.card-title
+		background: rgba(255,255,255,.8)
+
+		h1.entry-title
+			font-size: 2.2rem
+			text-transform: none
+			line-height: 2.8rem
+			margin: 1.8rem 0 1rem 0
+
+		.entry-meta
+			font-size: 1.3rem
+
+	.card-image
+		.card-title
+			top: 0px
+			padding: 0px 20px 20px
+
+	a
+		-webkit-transition: color 0.3s ease
+		-moz-transition: color 0.3s ease
+		-o-transition: color 0.3s ease
+		-ms-transition: color 0.3s ease
+		transition: color 0.3s ease
+		text-transform: none
+
+	.card-content
+		padding: 5px
+		a.card-title
+			color: $brand-color
+			font-size: 1.4rem
+			font-family: $opensans
+			font-weight: 600
+			line-height: 1.4rem
+			margin: 10px 0 0
+		p
+			margin: 0
+			margin-bottom: 10px
+			font-size: 1.1rem
+			color: #666
+		h6
+			color: $brand-gray
+		.eventInfo
+			display: table
+			height: 30px
+			width: 90%
+			clear: right
+			margin: 0 0 15px
+			*
+				display: table-cell
+				vertical-align: middle
+			.chip
+				background: $brand-color
+				border-radius: 25px
+				padding: 5px 10px
+				line-height: 1.5rem
+				color: $white
+				i
+					color: $white
+					float: left
+					margin: 0 10px
+			.sep
+				width: 15px
+		ul
+			margin: 0
+
+	.card-action
+		display: table
+		padding: 10px 15px
+		.datePublish
+			color: $brand-gray
+			display: table-cell
+			vertical-align: bottom
+		.btn
+			margin: 0
+
+	.btn
+		background-color: $brand-orange
+
+/* Estilos para Cards */
+
+.rpwidget
+	border: 0
+
+	.collection-item.avatar
+		height: 100%
+		padding-left: 72px
+		position: relative
+
+	.collection-item
+		background-color: $white
+		line-height: 1.5rem
+		padding: 20px 20px
+		margin: 0px
+		border-bottom: 1px solid #e0e0e0
+
+ul.collection.rpwidget
+	background: $white
+	padding: 0
+	margin-top: -20px

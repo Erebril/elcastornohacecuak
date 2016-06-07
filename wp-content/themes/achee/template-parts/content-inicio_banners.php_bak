@@ -1,0 +1,11 @@
+<div class="col s12 m9 mobile-full">
+	<div class="row" id="corpBanners">
+		<?php get_template_part( 'template-parts/content', 'inicio_corpadds' ); ?>
+	</div>
+	<div class="row" id="successCases">
+		<?php //get_template_part( 'template-parts/content', 'inicio_exitos' ); ?>
+	</div>
+</div>
+<div class="col s12 l3">
+	<?php dynamic_sidebar( 'achee-twitter' ); ?>	
+</div>

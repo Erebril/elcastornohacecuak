@@ -1,0 +1,604 @@
+/*home styles*/
+.home.page
+	.title
+		h1,h2,h3,h4,h5,h6
+			color: $brand-color
+			font-size: 1.35rem
+			font-weight: 700
+			text-transform: uppercase
+			line-height: 3rem
+		&.successCases
+			h4
+				border-bottom: none
+				line-height: 1.35rem
+				margin: 0 0 20px
+
+.site-content
+	.title
+		h4
+			border-bottom: 1px solid $brand-color
+			margin: 0 0 35px
+
+#ourlabor
+	margin-top: -80px
+	margin-bottom: 45px
+	position: relative
+	z-index: 995
+	> .col
+		background: url('../img/block-shadow.png') no-repeat
+		background-position: center 98%
+		background-size: 98%
+		padding-bottom: 30px
+		@media screen and (max-width: 1520px)
+			background-position: center 97%
+			padding-bottom: 30px
+		@media screen and (max-width: 1300px)
+			padding-bottom: 25px
+		@media screen and (max-width: 992px)
+			padding-bottom: 26px
+	.block
+		background: $brand-color url('../img/block-border.png') no-repeat right center
+		min-height: 240px
+		padding: 12px 1rem 25px
+		&:last-of-type
+			background-image: none
+		*
+			color: $white
+		.boxIcon
+			.fa
+				&.fa-puzzle-piece
+					font-size: 1.75rem
+		.tileLink
+			font-family: $titillium
+			*
+				margin: 0
+		.theExcerpt
+			p
+				font-size: .85rem
+				text-align: justify
+				margin: 15px 0 10px
+		.theLink
+			font-family: $titillium
+			font-size: 0.95rem
+			font-weight: 600
+			line-height: 1.9rem
+			@extend .setLeft
+			margin: 0
+			.fa
+				font-size: 1.6rem
+				margin-right: 5px
+			&:hover
+				opacity: .65
+	.card
+		// esto quedaría obsoleto con nuevo diseño
+		+border-radius($radius: 0px)
+		.card-image
+			img
+				+border-radius($radius: 0px)
+		.card-content
+			padding: 0
+			.boxIcon
+				background: $brand-color
+				height: 100px
+				.center
+					width: 100%
+				.fa
+					color: $brand-color
+					background: $white
+					border-color: $white
+					border-radius: 50%
+					height: 60px
+					line-height: 45px
+					width: 60px
+			.valign-wrapper
+				height: 100px
+				.tileLink
+					font-family: $titillium
+					padding-right: 65px
+					background: url('../img/label.jpg') no-repeat 95% center
+					width: 100%
+					.label
+						color: $darker-gray
+						font-size: 1.3rem
+						font-weight: 600
+						line-height: 1.4rem
+						@extend .setLeft
+
+$tabHeight: 620px
+
+#workSections
+	margin-bottom: 75px
+	.tabwraper
+		@extend .setLeft
+		>.col
+			padding: 0
+			min-height: $tabHeight
+			height: auto
+		ul.sectiontabs
+			list-style: none
+			background: $panel-gray
+			@extend .display-flexbox
+			+css3-prefix(flex-direction, column)
+			+css3-prefix(align-items, center)
+			@extend .space-between
+			height: 100%
+			margin: 0px
+			padding: 0 15px 0 0
+			position: relative
+			width: 100%
+			&::after
+				@extend .arrowtabs
+			&.first::after
+				border-left: 15px solid $velde
+				top: 10%
+			&.second::after
+				border-left: 15px solid $cyan
+				top: 35%
+			&.third::after
+				border-left: 15px solid $yello
+				top: 60%
+			&.fourth::after
+				border-left: 15px solid $rojo
+				top: 85%
+			.tab-link
+				color: $white
+				background: $lighter-gray
+				border-bottom: 5px solid $lighter-gray
+				+css3-prefix(flex, 1 1 auto)
+				+css3-prefix(align-self, center)
+				display: inline-block
+				line-height: .95rem
+				text-align: center
+				width: 100%
+				&.current
+					&.agenda
+						background: $velde
+						border-bottom: 5px solid darken($velde, 10%)
+						&:hover
+							background: darken($velde, 2.5%)
+					&.cursos
+						background: $cyan
+						border-bottom: 5px solid darken($cyan, 10%)
+						&:hover
+							background: darken($cyan, 2.5%)
+					&.lineas
+						background: $yello
+						border-bottom: 5px solid darken($yello, 10%)
+						&:hover
+							background: darken($yello, 2.5%)
+					&.licitaciones
+						background: $rojo
+						border-bottom: 5px solid darken($rojo, 10%)
+						&:hover
+							background: darken($rojo, 2.5%)
+				&:hover
+					background: $plain-gray
+					border-bottom: 5px solid $plain-gray
+				.icon
+					position: relative
+				.isIcon
+					font-size: 2.5rem
+					&.fa-user-plus,
+					&.fa-newspaper-o
+						font-size: 2.4rem
+					&.material-icons
+						font-size: 3.05rem
+				.badge-new
+					background-color: $brand-orange
+					//border: 2px solid #fff
+					border-radius: 2px
+					color: #fff
+					font-size: 0.9rem
+					font-weight: 400
+					padding: 2px 8px
+					position: absolute
+					right: -16px
+					top: -6px
+					text-align: center
+				.text
+					@extend .display-flexbox
+					+css3-prefix(flex-direction, column)
+					+css3-prefix(align-content, center)
+					-webkit-box-pack: center
+					-moz-box-pack: center
+					-webkit-justify-content: center
+					-ms-flex-pack: center
+					justify-content: center
+					height: 150px
+					>div
+						+css3-prefix(flex, 0 0 25%)
+						+css3-prefix(align-self, center)
+						&.section
+							font-size: 1rem
+							font-weight: 700
+							padding-top: 0.5rem
+							padding-left: 5%
+							padding-right: 5%
+							text-transform: uppercase
+							@media screen and (max-width: 600px)
+								font-weight: 600
+							@media screen and (min-width: 993px) and (max-width: 1279px)
+								font-size: .75rem
+							@media screen and (min-width: 1280px) and (max-width: 1500px)
+								font-size: .9rem
+
+
+		.sectiontab-content
+			display: none
+			background: $panel-gray
+			padding: 30px 15px
+			height: $tabHeight
+			&.current
+				display: inherit
+				.row
+					margin: 0
+					&.set_list
+						height: auto
+						margin-bottom: 27px
+						max-height: $tabHeight - 205px
+			.valign-wrapper
+				&.noContent
+					height: $tabHeight - 70px
+					.valign
+						width: 70%
+						margin: auto
+					img.circle
+						margin-top: 25px
+					.title
+						color: $brand-color
+						margin-top: 0
+			.card
+				height: auto
+				max-height: $tabHeight - 60px
+				margin: 0px
+			.card-content
+				@extend .setLeft
+				.title
+					//font-family: $titillium
+					font-size: 1.35rem
+					line-height: 1.35rem
+					color: $brand-color
+					margin-bottom: 15px
+					a
+						color: $brand-color
+				p
+					color: $plain-gray
+					font-size: .9rem
+					margin-bottom: 10px
+				i
+					color: $white
+				*
+					color: $plain-gray
+				.btn
+					float: right
+					margin-top: 10px
+					margin-bottom: 10px
+			.set_secTitle
+				color: $brand-color
+				font-size: 1.4rem
+				line-height: 1.1rem
+				font-weight: 600
+				margin: 0 0 15px
+				text-transform: uppercase
+				@media screen and (max-width: 992px)
+					margin-top: 25px
+				@media screen and (max-width: 600px)
+					margin-top: 0
+			.set_list
+				.lineTit
+					float: left
+					font-weight: 600
+					color: $brand-color
+					margin: 10px 0 15px
+					padding-left: 20px
+					line-height: 1.15rem
+					width: 100%
+					&:hover
+						color: $darker-green
+					.end-date
+						font-style: italic
+						margin-left: 10px
+						font-weight: 400
+						color: $brand-gray
+				.fa
+					color: $dark-gray
+					font-size: 1.8rem
+				.more-noticia-responsive-1
+					//display: none
+					//@media screen and (max-width: 600px)
+						//display: block
+			div[class^="no-more-"],
+			div[class*="no-more-"]
+				display: none
+				padding: 5px 0 0
+				p
+					color: $plain-gray
+					font-size: 1.2rem
+
+#banners
+	.rsTwitter
+		border-top: 5px solid $brand-color
+		+border-radius($radius: 0px)
+		margin: 0 0 1.5rem
+		padding: 10px 15px
+		//height: $tabHeight - 230px
+		//max-height: $tabHeight - 230px
+		@media screen and (max-width: 992px)
+			width: 100%
+		.tweet-title
+			color: $brand-color
+			margin: 0
+			font-size: 1.3rem
+			line-height: 1.3rem
+		iframe
+			.timeline[style]
+				width: 100% !important
+				max-width: 100% !important
+				.stream[style]
+					width: 100% !important
+	
+.randomvideosidebar
+	iframe
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+	.VideoCaption
+		display: none
+
+#corpBanners
+	&.row
+		margin-left: -0.95rem
+		margin-right: -0.95rem
+		margin-bottom: 0px
+	.col
+		padding: 0 .95rem
+	a.corpBann
+		.link
+			border: 4px solid $white
+			box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.18)
+			+transition(color, .5s, ease)
+			width: 100%
+		&:hover
+			.link
+				box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.35)
+				+transition(color, .5s, ease)
+	.logosSlider
+		.owl-carousel
+			.owl-item
+				padding: 0 15px
+				.item
+					img
+						background: $white
+						box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.15), 0 2px 8px 0 rgba(0, 0, 0, 0.1)
+		.customNavigation
+			//bottom: 50px
+			right: 20px
+			z-index: 10
+#successCases
+	.successCases
+		*
+			border-top: 1px solid $brand-color
+			padding: 65px 0 30px
+			margin: 20px 4px 10px 0
+	.logosSlider
+		.owl-carousel
+			.owl-item
+				padding: 0 15px
+				.item
+					img
+						background: $white
+						box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.15), 0 2px 8px 0 rgba(0, 0, 0, 0.1)
+		.customNavigation
+			top: -65px
+			right: 20px
+			z-index: 10
+			@media screen and (max-width: 600px)
+				top: inherit
+.logosSlider
+	padding: 0px
+	height: 200px
+	position: relative
+	.fshadow
+		box-shadow: -7px 0 15px 2px #F5F5F5
+		background: #F5F5F5
+		height: 90%
+		position: absolute
+		top: 0
+		right: -20px
+		z-index: 2
+		width: 10px
+	#owl-slide
+		position: absolute
+		width: 103%
+		.owl-item
+			padding: 0 0 6px
+			.item
+				padding: 0px 10px
+				margin: 0 1.5rem 0 .75rem
+				color: #FFF
+				text-align: center
+				max-height: 118px
+	.customNavigation
+		text-align: center
+		position: absolute
+		a
+			-webkit-user-select: none
+			-khtml-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+			height: 28px
+			background: rgb(51, 57, 74)
+			+border-radius($radius: 0px)
+			box-shadow: none
+			margin: 0  7.5px
+			padding: 3.5px 10px
+			.fa
+				font-size: 1.25rem
+				margin: 0
+				line-height: 1.25rem
+			&:hover
+				color: $light-gray
+				background: rgb(77, 90, 125)
+
+
+
+//#banners
+#workSections
+	.widget
+		background: $white
+		border: 1px solid $lighter-gray
+		border-top: 6px solid $brand-color
+		margin: 0 0 10px
+		.widget-title
+			color: $brand-color
+			font-size: 1.2rem
+			font-weight: 700
+			line-height: 1.3rem
+			text-transform: uppercase
+			margin: 15px 30px
+			.fa
+				margin-right: 10px
+		ul.menu
+			//height: 360px
+			margin: 0
+			border-top: 1px solid $lighter-gray
+			line-height: 1.65rem
+			li
+				border-bottom: 1px solid $lighter-gray
+				font-size: 1.075rem
+				line-height: 1.2rem
+				padding: 10px 30px
+				&:last-of-type
+					border-bottom: none
+
+#ourSites
+	margin-bottom: 45px
+	.wrapSite
+		float: left
+		width: 20%
+		@media screen and (max-width: 1230px)
+			//margin-right: 2.5%
+			padding-right: 2.5%
+			width: 33.333333%
+		@media screen and (max-width: 600px)
+			//padding: 0 15%
+			width: 50%
+		@media screen and (max-width: 600px)
+			width: 50%
+			text-align: center
+		@media screen and (max-width: 450px)
+			//width: 100%
+			//text-align: center
+		.link
+			position: relative
+			@extend .setLeft
+			padding-bottom: 25px
+			img
+				margin: 0
+				padding: 0
+			&:hover
+				background: url('../img/site-img-shadow.png') no-repeat left bottom
+				background-size: 94%
+				img
+					box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.4), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+					&:before, &:after
+						content: ""
+						position: absolute
+						z-index: -2
+			.own-site-description
+				position: absolute
+				top: 0
+				opacity: 0
+				display: none
+				padding: 14px
+				background-color: rgba(0, 0, 0, .5)
+				//width: 235px
+				//height: 146px
+				width: 100%
+				height: 80%
+				max-width: 235px
+				max-height: 146px
+				& > p
+					padding: 0
+					margin: 0
+					font-size: 0.9rem
+			&:hover
+				.own-site-description
+					display: block
+					opacity: 1
+					@media screen and (max-width: 600px)
+						display: none
+
+
+#action-areas	
+	.areas-action-container
+		margin-bottom: 50px		
+	&.row
+		.col
+			padding-left: 0.1rem
+			padding-right: 0.1rem
+			&.area-item
+				@media screen and (max-width: 600px)
+					width: 50%
+	
+	a
+		display: block
+		height: auto
+		width: 100%
+		padding-right: 3px
+		padding-left: 3px
+		@media screen and (max-width: 600px)		
+		.icon-area-action		
+			position: relative
+			margin: -20px 0 0 0
+			vertical-align: bottom
+			height: 100px				
+			font-size: 0.9rem
+			color: $dark-gray			
+			background-repeat: no-repeat
+			background-position: center bottom
+			display: block
+			text-align: center			
+			@media screen and (max-width: 992px)
+				margin-bottom: 50px
+				margin-top: 10px
+			@media screen and (max-width: 600px)
+				//font-size: 0.9rem
+			span
+				margin-top: 14px
+				display: block
+				width: 100%
+				position: absolute
+				bottom: -40px
+				line-height: 1rem
+				//padding-top: 60%
+		.icon-edificacion						
+			background-image: url('../img/edificacion.png')			
+			&:hover,&.active
+				background-image: url('../img/edificacion2.png')
+				color: #1D70B7
+		.icon-industria			
+			background-image: url('../img/industria.png')			
+			&:hover,&.active
+				background-image: url('../img/industria2.png')
+				color: #BE1621
+		.icon-transporte
+			background-image: url('../img/transporte.png')	
+			&:hover,&.active
+				background-image: url('../img/transporte2.png')
+				color: #3AA935
+		.icon-educacion
+			background-image: url('../img/educacion.png')	
+			&:hover,&.active
+				background-image: url('../img/educacion2.png')
+				color: #FBB03B
+		.icon-medicion
+			background-image: url('../img/medicion.png')	
+			&:hover,&.active
+				background-image: url('../img/medicion2.png')
+				color: #36A9E0
+		.icon-capacidad
+			background-image: url('../img/capacidad.png')	
+			&:hover,&.active
+				background-image: url('../img/capacidad2.png')
+				color: #EF7C00			

@@ -1,0 +1,149 @@
+/* Header */
+header
+	&#masthead
+		background: $white
+		.site-branding
+			padding: 15px 0 0
+			.row
+				margin-bottom: 0
+			.main-logo
+				max-width: 200px
+				+transition(color, .05s, ease-in)
+				&:hover
+					+opacity(.5)
+					+transition(color, .15s, ease-in)
+				&:focus
+					outline: none
+		.nav-top-wrapper
+			background: #fbfbfb
+			border-bottom: 1px solid $light-gray
+			.row,
+			.widget
+				margin-bottom: 0
+			.top-navigation
+				box-shadow: none
+				*
+					color: $brand-gray
+				ul
+					float: left
+					border-left: 1px solid $light-gray
+					> li
+						$iconh: 0.75rem
+						border-right: 1px solid $light-gray
+						padding: 15px 20px
+						*
+							float: left
+						.fa
+							color: $lighter-gray
+							font-size: $iconh + 0.5rem
+							line-height: $iconh
+							margin-right: .75rem
+						p
+							font-size: $iconh
+							line-height: $iconh + 0.5rem
+							margin: 0 .35rem 0 0
+						a
+							font-size: $iconh
+							line-height: $iconh + 0.5rem
+							padding: 0
+							.material-icons
+								color: $lighter-gray
+								font-size: 1.25rem
+								float: left
+								margin-top: 22px
+								margin-right: 10px
+						&:hover
+							background: $lightest-gray
+							*
+								color: $dark-gray
+				.right
+					.widget
+						&.achee-rs
+							border-right: 1px solid $light-gray
+							display: inline-block
+							padding: 10px 10px 4px
+							line-height: 35px
+							&:hover
+								background: $lightest-gray
+								.social-icon
+									// color: $dark-gray
+									text-shadow: 1px 1px 0 $lightest-gray
+									&.fa-facebook,
+									&.fa-facebook-official,
+									&.fa-facebook-square
+										color: #4d66a4
+									&.fa-twitter,
+									&.fa-twitter-square
+										color: #2ba7e2
+									&.fa-youtube-square,
+									&.fa-youtube-play,
+									&.fa-youtube
+										color: #cd181f
+							.social-icon
+								color: $lighter-gray
+								font-size: 1.65rem
+								&.fa-youtube-play
+									font-size: 1.8rem
+							a.fa
+								&:before
+									display: none
+								.fa-circle
+									display: none
+		.widget
+			&.widget_prisna-google-website-translator
+				.goog-te-gadget
+					.goog-te-gadget-simple
+						background: transparent
+						border: none
+						border-right: 1px solid $light-gray
+						padding: 0
+						img
+							display: none
+						.goog-te-menu-value
+							background: url('../img/language.png') no-repeat left 10px
+							color: $lighter-gray
+							padding: 0px 5px 0px 20px
+							span
+								margin-left: 8px
+								&:first-of-type
+									display: none
+								&:nth-of-type(2)
+									display: none
+		.goog-te-menu-frame.skiptranslate
+			box-shadow: 0 3px 8px 0px rgba(153, 153, 153, 0.45) !important
+			.goog-te-menu2
+				background: #FBFBFB !important
+				border: 1px solid #E7E7E7 !important
+				padding: 10px !important
+				.goog-te-menu2-item-selected
+					.indicator
+						color: $lighter-gray !important
+					.text
+						color: $lighter-gray !important
+
+
+
+#my-menu	
+	.social-icon
+		color: $lighter-gray
+		font-size: 1.65rem
+		&.fa-youtube-play
+			font-size: 1.8rem			
+		&:hover
+			text-shadow: 1px 1px 0 $lightest-gray
+			&.fa-facebook,
+			&.fa-facebook-official,
+			&.fa-facebook-square
+				color: #4d66a4
+			&.fa-twitter,
+			&.fa-twitter-square
+				color: #2ba7e2
+			&.fa-youtube-square,
+			&.fa-youtube-play,
+			&.fa-youtube
+				color: #cd181f
+	.achee-rs
+		padding: 0 10px 5px 10px
+		width: 33%
+		span
+			margin-top: -6px

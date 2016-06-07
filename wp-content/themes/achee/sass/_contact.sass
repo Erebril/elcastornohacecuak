@@ -1,0 +1,97 @@
+.custom-form
+    @extend .setLeft
+    margin-top: 10px
+    margin-bottom: 25px
+    .contacts-form
+        margin-top: 30px
+    .title
+        color: $brand-color
+        font-size: 1.8rem
+        font-weight: 700
+        line-height: 2.15rem
+        margin: 0 0 0.7rem
+        text-transform: uppercase
+        i
+            margin-right: 8px
+    .row
+        margin-bottom: 0
+    .input-field
+        margin-top: 15px
+        label
+            color: darken($dark-gray, 5%)
+            font-size: .9rem
+            text-transform: uppercase
+            padding-left: 2.5%
+            &.active
+                +css3-prefix(transform, translateY(-170%))
+                padding-left: 0px
+        input
+            &[type=text],
+            &[type=password],
+            &[type=email],
+            &[type=url],
+            &[type=datetime-local],
+            &[type=tel],
+            &[type=number],
+            &[type=search]
+                background-color: $white
+                border: 1px solid $white
+                +border-radius($radius: 0px)
+                box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3)
+                height: 3rem
+                padding: 0 2.5%
+                width: 95%        
+        textarea
+            &.materialize-textarea
+                background-color: $white
+                border: 1px solid $white
+                box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3)
+                min-height: 6.8rem
+                padding: 10px 2.5%
+                width: 95%
+        input,
+        textarea
+            &:focus
+                border: 1px solid lighten($brand-color, 25%)
+                box-shadow: 1px 1px 2px 0 rgba(142, 192, 67, 0.35)
+        select.clasic-input
+            height: 3rem
+            margin-bottom: 15px
+            padding: 5px 2.5%
+    .btn
+        float: right
+        background: $brand-orange
+        min-width: 150px
+    .input-field
+        label.active
+            color: $brand-color
+            font-size: 90%
+    // contact form 7
+    .files
+        .wpcf7-form-control-wrap
+            position: static
+    .wpcf7-not-valid-tip
+        margin-bottom: 15px
+    .wpcf7-validation-errors
+        border: none
+        padding: 15px 20px
+        font-size: 0.95rem        
+        border-radius: 2px
+        color: #fff
+        background-color: #e65100
+        font-family: $titillium
+    .wpcf7-not-valid-tip
+        padding: 7px 12px
+        margin: 0
+
+
+.map-info-title
+    font-size: 15px
+    font-weight: 400
+    margin: 0
+.map-info-address
+    p
+        padding: 0
+        margin: 0 0 5px 0
+        font-size: 13px
+  

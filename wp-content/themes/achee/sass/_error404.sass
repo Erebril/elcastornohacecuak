@@ -1,0 +1,103 @@
+.not-found
+	&.error
+		.card-action
+			background: transparent
+		.page-header
+			.page-title
+				background: url('../img/error-shadow.png') no-repeat center bottom
+				background-size: 90%
+				color: darken($brand-color, 10%)
+				font-size: 4.2rem
+				margin: 10px 0 50px
+				padding-bottom: 45px
+				text-align: center
+		.page-content
+			p
+				color: $dark-gray
+				font-size: .9rem
+				line-height: 1.15rem
+				&.green-title
+					font-size: 125%
+			.col-topics
+				margin: 45px 0
+				padding-bottom: 35px
+				border-bottom: 1px solid $brand-color
+				.icon
+					.fa-stack
+						width: 8em
+						height: 8em
+						line-height: 8em
+					.fa
+						&.fa-circle
+							color: $brand-color
+							font-size: 8rem
+						&.fa-inverse
+							font-size: 2.25em
+							line-height: 3em !important
+				.title
+					color: $brand-color
+					font-weight: 600
+					margin: 15px 0
+					line-height: 1.2rem
+				p
+					font-size: 100%
+					text-align: justify
+					line-height: 1.2rem
+				.more
+					font-size: .95rem
+					font-weight: 600
+					text-transform: capitalize
+					.fa
+						font-size: 1.5rem
+						float: left
+						line-height: 1.35rem !important
+						margin-right: 5px
+			.last-entrys
+				.green-title
+					font-size: 1.4rem
+				.circle
+					border: 4px solid $white
+					box-shadow: 0 2px 4px 0 $lighter-gray
+				.row
+					border-bottom: 1px solid $brand-color
+					padding: 10px 0 25px
+				.line
+					.title
+						color: $brand-color
+						margin: 15px 0 5px
+					p
+						margin: 2.5px 0 0
+					&:last-of-type
+						>.row
+							border-bottom: none
+.sider
+	.widget
+		background: $white
+		border-top: 5px solid $brand-color
+		+border-radius($radius: 0px)
+		display: inline-block
+		box-shadow: 0 1px 6px 0px $lighter-gray
+		padding: 5px 15px 10px
+		.widgettitle,
+		.widget-title
+			color: $brand-color
+			background: $white
+			font-size: 1.2rem
+			font-weight: 700
+			padding: 5px 0
+			margin: 5px 0
+			line-height: 1.2rem
+	.tagcloud
+		text-align: center
+		margin: 10px 0 15px
+		[class^="tag-link"]
+			display: inline-block
+			height: auto
+			font-size: 13px
+			font-weight: 500
+			color: rgba(0, 0, 0, 0.6)
+			line-height: 22px
+			padding: 4px 15px
+			margin-top: 4px
+			border-radius: 16px
+			background-color: #e4e4e4

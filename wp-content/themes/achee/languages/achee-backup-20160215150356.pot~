@@ -1,0 +1,915 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
+"POT-Revision-Date: Mon Feb 15 2016 12:03:43 GMT-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../404.php:24
+msgid "<strong>404</strong> SITIO NO ENCONTRADO"
+msgstr ""
+
+#: ../404.php:27
+msgid ""
+"Estamos realmente tristes lo sientimos, pero la página solicitada no fue "
+"encontrada."
+msgstr ""
+
+#: ../archive-cursos.php:69 ../inc/custom-post-types-cursos.php:23 ../inc/custom-
+#: post-types-cursos.php:24
+msgid "Ver Curso"
+msgstr ""
+
+#: ../archive-licitaciones.php:83 ../inc/custom-post-types-licitacion.php:23 ..
+#: /inc/custom-post-types-licitacion.php:24
+msgid "Ver Licitación"
+msgstr ""
+
+#: ../archive-linea-apoyo.php:79
+msgid "Ver Línea de apoyo"
+msgstr ""
+
+#: ../comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:40 ../comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:43 ../comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: ../comments.php:44 ../comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: ../comments.php:77
+msgid "Comments are closed."
+msgstr ""
+
+#: ../functions.php:47
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:48
+msgid "Primer Menú Verde"
+msgstr ""
+
+#: ../functions.php:49
+msgid "Segundo Menú Verde"
+msgstr ""
+
+#: ../functions.php:50
+msgid "Tercer Menú Verde"
+msgstr ""
+
+#: ../functions.php:51
+msgid "Cuarto Menú Verde"
+msgstr ""
+
+#: ../functions.php:52
+msgid "Top Menu"
+msgstr ""
+
+#: ../functions.php:53
+msgid "Inner Pages Menu"
+msgstr ""
+
+#: ../functions.php:416
+msgid "Bienvenido al editor de la AChEE"
+msgstr ""
+
+#: ../header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla página de areas acción"
+msgstr ""
+
+#: ../plantilla-area-accion.php:30
+msgid "Área asociadas"
+msgstr ""
+
+#: ../plantilla-area-accion.php:44 ../single-licitaciones.php:161 ../single-linea-
+#: apoyo.php:149 ../template-parts/content-inicio_areas_accion.php:5
+msgid "Áreas de Acción"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla Página Hijo Asesoría"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla Página Hijo Eficiencia"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla Página Hijo Formación"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla Página Hijo Nosotros"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla formulario de Contacto"
+msgstr ""
+
+#: ../plantilla-contacto.php:21
+msgid "Formulario de contacto"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla página de Biblioteca"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla página de Inicio"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla página de Noticias"
+msgstr ""
+
+#: ../plantilla-noticias.php:47 ../template-parts/content-inicio_noticias.php:33
+msgid "Noticias"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla Página Padre Asesoría"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla Página Padre Eficiencia"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla Página Padre Formación"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla Página Padre Nosotros"
+msgstr ""
+
+#. Name of the template
+msgid "Plantilla sin imagen top"
+msgstr ""
+
+#. Name of the template
+msgid "Test Tiempo"
+msgstr ""
+
+#: ../searchform.php:3 ../searchform.php:3 ../searchform.php:7
+msgid "Search..."
+msgstr ""
+
+#: ../inc/custom-meta-boxes-bannershome.php:47 ../inc/custom-meta-boxes-
+#: sitioshome.php:47
+msgid "Vínculo al que apunta la imagen:"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-cursos.php:79
+msgid "Fecha Inicio Inscripciones"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-cursos.php:86
+msgid "Fecha Término Inscripciones"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-cursos.php:94
+msgid "Fecha Inicio Curso"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-cursos.php:101
+msgid "Fecha Término Curso"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-cursos.php:109 ../inc/custom-meta-boxes-licitaciones.
+#: php:126 ../inc/custom-meta-boxes-linea.php:95
+msgid "Área de acción"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-cursos.php:122
+msgid "Ciudad"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:104
+msgid "ID de licitación"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:111
+msgid "Tipo de licitación"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:138
+msgid "Otro tipo Licitación"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:154
+msgid "Fecha de publicación"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:161
+msgid "Fecha de cierre de recepción de oferta"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:170
+msgid "Fecha de inicio de preguntas"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:177
+msgid "Fecha de término de preguntas"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:186
+msgid "Fecha de publicación de respuestas"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:193
+msgid "Fecha de acto de apertura técnica"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:202
+msgid "Fecha de acto de apertura económica"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:209
+msgid "Fecha de adjudicación"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:218
+msgid "Fecha de entrega en soporte físico"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:225
+msgid "Fecha de firma de contrato"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:234
+msgid "Tiempo de evaluación de ofertas"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-licitaciones.php:241
+msgid "Monto total estimado"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-linea.php:80
+msgid "Fecha Inicio"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-linea.php:87
+msgid "Fecha Término"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-linea.php:129
+msgid "Fecha Inicio Preguntas"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-linea.php:136
+msgid "Fecha final Preguntas"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-linea.php:145
+msgid "Fecha publicación Respuestas"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-linea.php:152
+msgid "Fecha cierre postulaciones"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-linea.php:162
+msgid "Fecha apertura recepción de postulaciones"
+msgstr ""
+
+#: ../inc/custom-meta-boxes-subtitulos.php:47
+msgid "Ingrese texto"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:16 ../inc/custom-post-types-adds.php:34
+msgid "Banners Corporativos"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:17
+msgid "Banner"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:18 ../inc/custom-post-types-adds.php:19
+msgid "Añadir Nuevo Banner"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:20 ../inc/custom-post-types-agenda.php:20 ..
+#: /inc/custom-post-types-banners.php:20 ../inc/custom-post-types-cursos.php:20 ..
+#: /inc/custom-post-types-exitos.php:20 ../inc/custom-post-types-licitacion.php:
+#: 20 ../inc/custom-post-types-linea-apoyo.php:20 ../inc/custom-post-types-
+#: nuestra-labor.php:20 ../inc/custom-post-types-sitios.php:20 ../inc/custom-post-
+#: types-slider.php:20
+msgid "Editar"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:21
+msgid "Editar Banner"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:22
+msgid "Nuevo Banner"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:23 ../inc/custom-post-types-adds.php:24
+msgid "Ver Banner"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:25
+msgid "Buscar Banner"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:26
+msgid "Banner No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-adds.php:27
+msgid "Banner no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-agenda.php:16 ../inc/custom-post-types-agenda.php:17 .
+#: ./inc/custom-post-types-agenda.php:34
+msgid "Agenda"
+msgstr ""
+
+#: ../inc/custom-post-types-agenda.php:18
+msgid "Añadir Agenda"
+msgstr ""
+
+#: ../inc/custom-post-types-agenda.php:19
+msgid "Añadir Nueva Agenda"
+msgstr ""
+
+#: ../inc/custom-post-types-agenda.php:21
+msgid "Editar Agenda"
+msgstr ""
+
+#: ../inc/custom-post-types-agenda.php:22
+msgid "Nueva Agenda"
+msgstr ""
+
+#: ../inc/custom-post-types-agenda.php:23 ../inc/custom-post-types-agenda.php:24
+msgid "Ver Agenda"
+msgstr ""
+
+#: ../inc/custom-post-types-agenda.php:25
+msgid "Buscar Agenda"
+msgstr ""
+
+#: ../inc/custom-post-types-agenda.php:26
+msgid "Agenda No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-agenda.php:27
+msgid "Agenda no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-banners.php:16 ../inc/custom-post-types-banners.php:34
+msgid "Imágenes de banner"
+msgstr ""
+
+#: ../inc/custom-post-types-banners.php:17
+msgid "cabecera"
+msgstr ""
+
+#: ../inc/custom-post-types-banners.php:18 ../inc/custom-post-types-banners.php:19
+msgid "Añadir Nueva Imagen"
+msgstr ""
+
+#: ../inc/custom-post-types-banners.php:21
+msgid "Editar Imagen"
+msgstr ""
+
+#: ../inc/custom-post-types-banners.php:22
+msgid "Nueva Imagen"
+msgstr ""
+
+#: ../inc/custom-post-types-banners.php:23 ../inc/custom-post-types-banners.php:24
+msgid "Ver Imagen"
+msgstr ""
+
+#: ../inc/custom-post-types-banners.php:25
+msgid "Buscar Imagen"
+msgstr ""
+
+#: ../inc/custom-post-types-banners.php:26
+msgid "Imagen No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-banners.php:27
+msgid "Imagen no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-cursos.php:16 ../inc/custom-post-types-cursos.php:17 .
+#: ./inc/custom-post-types-cursos.php:34 ../template-parts/content-inicio_cursos.
+#: php:33
+msgid "Cursos"
+msgstr ""
+
+#: ../inc/custom-post-types-cursos.php:18
+msgid "Añadir Curso"
+msgstr ""
+
+#: ../inc/custom-post-types-cursos.php:19
+msgid "Añadir Nuevo Curso"
+msgstr ""
+
+#: ../inc/custom-post-types-cursos.php:21
+msgid "Editar Curso"
+msgstr ""
+
+#: ../inc/custom-post-types-cursos.php:22
+msgid "Nuevo Curso"
+msgstr ""
+
+#: ../inc/custom-post-types-cursos.php:25
+msgid "Buscar Curso"
+msgstr ""
+
+#: ../inc/custom-post-types-cursos.php:26
+msgid "Curso No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-cursos.php:27
+msgid "Curso no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-exitos.php:16 ../inc/custom-post-types-exitos.php:34
+msgid "Casos de Éxito"
+msgstr ""
+
+#: ../inc/custom-post-types-exitos.php:17
+msgid "Caso de Éxito"
+msgstr ""
+
+#: ../inc/custom-post-types-exitos.php:18 ../inc/custom-post-types-exitos.php:19
+msgid "Añadir Nuevo Caso de Éxito"
+msgstr ""
+
+#: ../inc/custom-post-types-exitos.php:21
+msgid "Editar Caso de Éxito"
+msgstr ""
+
+#: ../inc/custom-post-types-exitos.php:22
+msgid "Nuevo Caso de Éxito"
+msgstr ""
+
+#: ../inc/custom-post-types-exitos.php:23 ../inc/custom-post-types-exitos.php:24
+msgid "Ver Caso de Éxito"
+msgstr ""
+
+#: ../inc/custom-post-types-exitos.php:25
+msgid "Buscar Caso de Éxito"
+msgstr ""
+
+#: ../inc/custom-post-types-exitos.php:26
+msgid "Caso de Éxito No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-exitos.php:27
+msgid "Caso de Éxito no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-licitacion.php:16 ../inc/custom-post-types-licitacion.
+#: php:34 ../template-parts/content-inicio_licitaciones.php:33
+msgid "Licitaciones"
+msgstr ""
+
+#: ../inc/custom-post-types-licitacion.php:17
+msgid "Licitación"
+msgstr ""
+
+#: ../inc/custom-post-types-licitacion.php:18
+msgid "Añadir Licitación"
+msgstr ""
+
+#: ../inc/custom-post-types-licitacion.php:19
+msgid "Añadir Nueva Licitación"
+msgstr ""
+
+#: ../inc/custom-post-types-licitacion.php:21
+msgid "Editar Licitación"
+msgstr ""
+
+#: ../inc/custom-post-types-licitacion.php:22
+msgid "Nueva Licitación"
+msgstr ""
+
+#: ../inc/custom-post-types-licitacion.php:25
+msgid "Buscar Licitación"
+msgstr ""
+
+#: ../inc/custom-post-types-licitacion.php:26
+msgid "Licitación No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-licitacion.php:27
+msgid "Licitación no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-linea-apoyo.php:16 ../inc/custom-post-types-linea-
+#: apoyo.php:17 ../inc/custom-post-types-linea-apoyo.php:34
+msgid "Líneas de Apoyo"
+msgstr ""
+
+#: ../inc/custom-post-types-linea-apoyo.php:18
+msgid "Añadir Línea"
+msgstr ""
+
+#: ../inc/custom-post-types-linea-apoyo.php:19
+msgid "Añadir Nueva Línea"
+msgstr ""
+
+#: ../inc/custom-post-types-linea-apoyo.php:21
+msgid "Editar Línea"
+msgstr ""
+
+#: ../inc/custom-post-types-linea-apoyo.php:22
+msgid "Nueva Línea"
+msgstr ""
+
+#: ../inc/custom-post-types-linea-apoyo.php:23 ../inc/custom-post-types-linea-
+#: apoyo.php:24
+msgid "Ver Línea"
+msgstr ""
+
+#: ../inc/custom-post-types-linea-apoyo.php:25
+msgid "Buscar Línea"
+msgstr ""
+
+#: ../inc/custom-post-types-linea-apoyo.php:26
+msgid "Línea No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-linea-apoyo.php:27
+msgid "Línea no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-nuestra-labor.php:16 ../inc/custom-post-types-nuestra-
+#: labor.php:34
+msgid "Nuestra Labor"
+msgstr ""
+
+#: ../inc/custom-post-types-nuestra-labor.php:17
+msgid "nuestra labor"
+msgstr ""
+
+#: ../inc/custom-post-types-nuestra-labor.php:18 ../inc/custom-post-types-nuestra-
+#: labor.php:19
+msgid "Añadir Nueva Labor"
+msgstr ""
+
+#: ../inc/custom-post-types-nuestra-labor.php:21
+msgid "Editar Labor"
+msgstr ""
+
+#: ../inc/custom-post-types-nuestra-labor.php:22
+msgid "Nueva Labor"
+msgstr ""
+
+#: ../inc/custom-post-types-nuestra-labor.php:23 ../inc/custom-post-types-nuestra-
+#: labor.php:24
+msgid "Ver Labor"
+msgstr ""
+
+#: ../inc/custom-post-types-nuestra-labor.php:25
+msgid "Buscar Labor"
+msgstr ""
+
+#: ../inc/custom-post-types-nuestra-labor.php:26
+msgid "Labor No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-nuestra-labor.php:27
+msgid "Labor no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-sitios.php:16 ../inc/custom-post-types-sitios.php:34 .
+#: ./template-parts/content-inicio_sitios.php:12
+msgid "Nuestros Sitios"
+msgstr ""
+
+#: ../inc/custom-post-types-sitios.php:17
+msgid "Sitio"
+msgstr ""
+
+#: ../inc/custom-post-types-sitios.php:18 ../inc/custom-post-types-sitios.php:19
+msgid "Añadir Nuevo Sitio"
+msgstr ""
+
+#: ../inc/custom-post-types-sitios.php:21
+msgid "Editar Sitio"
+msgstr ""
+
+#: ../inc/custom-post-types-sitios.php:22
+msgid "Nuevo Sitio"
+msgstr ""
+
+#: ../inc/custom-post-types-sitios.php:23 ../inc/custom-post-types-sitios.php:24
+msgid "Ver Sitio"
+msgstr ""
+
+#: ../inc/custom-post-types-sitios.php:25
+msgid "Buscar Sitio"
+msgstr ""
+
+#: ../inc/custom-post-types-sitios.php:26
+msgid "Sitio No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-sitios.php:27
+msgid "Sitio no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:16
+msgid "Slider Inicio"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:17
+msgid "Slider"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:18 ../inc/custom-post-types-slider.php:19
+msgid "Añadir Nuevo Slider"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:21
+msgid "Editar Slider"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:22
+msgid "Nuevo Slider"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:23 ../inc/custom-post-types-slider.php:24
+msgid "Ver Slider"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:25
+msgid "Buscar Slider"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:26
+msgid "Slider No Encontrada"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:27
+msgid "Slider no encontrada en Papelera"
+msgstr ""
+
+#: ../inc/custom-post-types-slider.php:34
+msgid "Sliders Inicio"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:86
+msgctxt "taxonomy general name"
+msgid "Lineamientos"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:87
+msgctxt "taxonomy singular name"
+msgid "Lineamiento"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:88
+msgid "Buscar Lineamientos"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:89
+msgid "Todos los Lineamientos"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:90
+msgid "Padre Lineamiento"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:91
+msgid "Padre Lineamiento:"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:92
+msgid "Editar Lineamiento"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:93
+msgid "Actualizar Lineamiento"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:94
+msgid "Agregar Lineamiento"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:95
+msgid "Nuevo Lineamiento"
+msgstr ""
+
+#: ../inc/custom-taxanomy-lineamiento.php:96
+msgid "Lineamientos"
+msgstr ""
+
+#: ../inc/extras.php:177
+msgid "<i class=\"material-icons\">chevron_left</i>"
+msgstr ""
+
+#: ../inc/extras.php:178
+msgid "<i class=\"material-icons\">chevron_right</i>"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:10
+msgid "Menú TopHeader Left side"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:19
+msgid "Menú TopHeader Right side"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:29
+msgid "Main Menu Right"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:38
+msgid "Sección Redes Sociales Páginas"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:47
+msgid "Sidebar"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:58
+msgid "Pie de Página"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:71
+msgid "Sección de Banners"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:80
+msgid "Sidebar Sección Twitter"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:89
+msgid "Sección de Youtube"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:99
+msgid "Footer Columna 1"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:108
+msgid "Footer Columna 2"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:117
+msgid "Footer Columna 3"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:126
+msgid "Footer Columna 4"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:140
+msgid "Sidebar Cursos"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:152
+msgid "Sidebar Licitaciones"
+msgstr ""
+
+#: ../inc/register-site-widgets.php:163
+msgid "Sidebar Lineas de Apoyo"
+msgstr ""
+
+#: ../inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: ../inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: ../inc/template-tags.php:50 ../inc/template-tags.php:56
+msgid ", "
+msgstr ""
+
+#: ../inc/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:64
+msgid "Leave a comment"
+msgstr ""
+
+#: ../inc/template-tags.php:64
+msgid "1 Comment"
+msgstr ""
+
+#: ../inc/template-tags.php:64
+#, php-format
+msgid "% Comments"
+msgstr ""
+
+#. translators: %s: Name of current post
+#. translators: %s: Name of current post
+#: ../inc/template-tags.php:71 ../template-parts/content-page.php:32
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: ../inc/the-breadcrumbs.php:213
+msgid "Page"
+msgstr ""
+
+#: ../template-parts/content-inicio_exitos.php:11
+msgid "Casos de éxito"
+msgstr ""
+
+#: ../template-parts/content-inicio_lineasapoyo.php:33
+msgid "Líneas de apoyo"
+msgstr ""
+
+#: ../template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../template-parts/content-none.php:20
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../template-parts/content-page.php:21
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: ../template-parts/content.php:27
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Name of the theme
+msgid "AChEE"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Description of the theme
+msgid "Description"
+msgstr ""
+
+#. Author of the theme
+msgid "Underscores.me"
+msgstr ""

@@ -1,0 +1,164 @@
+//@import materialize-src/sass/components/prefixer
+//@import materialize-src/sass/components/mixins
+//@import materialize-src/sass/components/color
+//@import materialize-src/sass/components/variables
+//@import materialize-src/sass/components/global
+//@import materialize-src/sass/components/icons-material-design
+//@import materialize-src/sass/components/grid
+//@import materialize-src/sass/components/navbar
+//@import materialize-src/sass/components/roboto
+//@import materialize-src/sass/components/typography
+//@import materialize-src/sass/components/cards
+//@import materialize-src/sass/components/toast
+//@import materialize-src/sass/components/tabs
+//@import materialize-src/sass/components/tooltip
+//@import materialize-src/sass/components/buttons
+//@import materialize-src/sass/components/dropdown
+//@import materialize-src/sass/components/waves
+//@import materialize-src/sass/components/modal
+//@import materialize-src/sass/components/collapsible
+//@import materialize-src/sass/components/chips
+//@import materialize-src/sass/components/materialbox
+//@import materialize-src/sass/components/form
+//@import materialize-src/sass/components/table_of_contents
+//@import materialize-src/sass/components/sideNav
+//@import materialize-src/sass/components/preloader
+//@import materialize-src/sass/components/slider
+//@import materialize-src/sass/components/date_picker/default.scss
+//@import materialize-src/sass/components/date_picker/default.date.scss
+//@import materialize-src/sass/components/date_picker/default.time.scss
+
+
+*, *:before, *:after
+	box-sizing: initial
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked
+	position: relative
+	top: 2px
+	left: 0
+	visibility: visible
+
+#wpwrap
+	background: #F9F9F9
+
+.ache-wrap
+	display: inline-block
+	padding: 15px 10px
+	.logo-widget
+		float: left
+		img
+			margin: -4px 20px 15px 0
+
+.tablenav .actions
+	overflow: visible
+
+.wp-list-table.widefat.plugins
+	float: left
+	width: 100%
+	margin-top: 15px
+
+.select-wrapper
+	margin-right: 15px
+	input.select-dropdown
+		height: 40px
+	.dropdown-content li > a,
+	.dropdown-content li > span
+		font-size: 1.1rem
+		padding-top: .5rem
+		padding-bottom: .5rem
+
+.search-box
+	#search-submit
+		float: right
+		margin-top: 5px
+
+.wp-admin p label input[type=radio]
+	display: inline-block
+	visibility: visible
+	left: 0
+	position: relative
+
+#wpadminbar
+	background: #484554
+	.quicklinks>ul>li>a
+		padding: 0 12px
+	#wp-admin-bar-wp-logo
+		.ab-item
+			background: url('img/white-iso.png') no-repeat center 4px
+			&:hover
+				background: url('img/white-iso.png') no-repeat center 4px
+				opacity: .6
+		.ab-sub-wrapper
+			.ab-item
+				background: none
+				&:hover
+					background: none
+					opacity: 1
+		span:before
+			content: ''
+			display: none
+	#wp-admin-bar-all-in-one-seo-pack
+		display: none
+	#wp-admin-bar-my-account.with-avatar>a img
+		height: 24px
+		margin: -4px 10px 0 6px
+	.dashicons
+		color: rgba(240,245,250,.6)
+		position: relative
+		float: left
+		font: 400 18px/1.4em dashicons
+		speak: none
+		padding: 4px 0
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+		background-image: none!important
+		margin-right: 6px
+
+#adduser .form-field input, #createuser .form-field input
+	border-top: none
+	border-right: none
+	border-left: none
+	height: 25px
+	outline: 0
+
+#titlediv
+	#title
+		background: none
+
+#wp-content-wrap
+	#wp-content-editor-tools
+		background-color: #F9F9F9
+
+.postbox-container
+	.inputsWrapper
+		display: inline-block
+		width: 100%
+		.inputLinner
+			float: left
+			width: 100%
+			.inputLabel
+				float: left
+				width: 100%
+			input				
+				height: 35px
+				margin: 5px 0 10px
+				width: 100%
+				&.custom-check
+					width: auto
+					display: block
+			select
+				width: 100%
+		@media screen and (min-width: 440px)
+			margin-bottom: 10px
+			.inputLinner
+				padding: 0 1%
+				width: 48%
+				.inputLabel
+					margin: 10px 0
+				input
+					margin: 0
+
+
+.input-hide
+	display: none

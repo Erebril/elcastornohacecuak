@@ -1,0 +1,322 @@
+@import custom-mixins
+@import custom-colors
+@import colors-master/colors
+@import sass-css3-mixins-master/css3-mixins
+// hojas de estilo importadas //
+@import main
+@import heading
+@import menu
+@import homepage
+@import slider
+@import breadcrumbs
+@import innerpage
+@import content
+@import mixins-fontface
+@import links
+@import cards
+@import widgets
+@import comments
+@import error404
+@import footer
+@import downloads
+@import contact
+@import news
+@import tools
+
+
+table
+	&.info-table
+		td, th
+			padding: 7px 10px
+		@media (max-width: 992px)
+			tr
+				float: left
+				border: none
+				width: 100%
+				th
+					text-align: left
+				td, th
+					padding: 4px
+
+.newstitle
+	display: table
+	border-bottom: 1px solid $brand-color
+	min-height: 65px
+	padding: 10px 0
+	width: 100%
+	.ontitle
+		color: $brand-color
+		display: table-cell
+		vertical-align: middle
+		text-transform: uppercase
+		*
+			color: $brand-color
+			&:hover
+				color: darken($brand-color, 10%)
+		&.day
+			font-size: 2.2rem
+			font-weight: 700
+			padding-right: 10px
+			text-align: right
+			width: 60px
+		&.date
+			border-left: 1px solid $brand-color
+			font-size: 1.1rem
+			line-height: 1.3rem
+			padding-left: 10px
+			width: 70px
+		&.text
+			font-size: 1.3rem
+			line-height: 1.5rem
+			padding-left: 15px
+			h1
+				font-size: 1.3rem
+				line-height: 1.5rem
+
+.responsive-img
+	&.wp-post-image
+		min-width: 100%
+
+.newsimage
+	margin-bottom: 0
+	img.thumb
+		float: left
+		border: 4px solid $white
+		box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25)
+.newsexcerpt
+	.border
+		border-bottom: 1px solid $brand-color
+		margin-bottom: 20px
+		padding-bottom: 45px
+	p
+		color: $plain-gray
+		font-size: 0.85rem
+		margin: 0 0 15px
+	>.col.m9
+		>a:first-of-type
+			float: left
+			width: 100%
+
+.parent-layout
+	$shadow-height: 17.5px
+	.content-overall
+		margin-bottom: 0px
+	.parent-banner
+		background: url('../img/parent-shadow.png') no-repeat center bottom
+		position: relative
+		@extend .setLeft
+		height: auto
+		margin-bottom: 25px
+		padding-bottom: $shadow-height
+		.caption
+			height: 170px
+			background: rgba(0,0,0,0.45)
+			position: absolute
+			left: 0
+			bottom: $shadow-height
+			z-index: 100
+			width: 100%
+			.icon
+				@extend .setLeft
+				padding-top: 30px
+				padding-right: 15px
+			.capt-text
+				padding-top: 45px
+				color: $white
+				*
+					margin: 0
+				h4
+					font-weight: 600
+				p
+					margin-top: 5px
+		.image
+			@extend .setLeft
+	.icon
+		.fa.fa-inverse
+			font-size: 2.85em
+			line-height: 2.45em!important
+		.fa.fa-circle
+			&:before
+				content: ""
+				background: url('../img/iconos-vde-bg.png') no-repeat 5px -2.5px
+				background-size: cover
+				display: block
+				height: 130px
+				width: 130px
+		&:hover
+			.fa.fa-circle
+				&:before
+					background: url('../img/iconos-vde-bg-hover.png') no-repeat 5px -2.5px
+
+
+.about-blocks
+	$about-width: 100% / 5
+	@extend .setLeft
+	margin: 140px 0 30px
+	.item
+		float: left
+		width: 100%
+		padding-left: 12px
+		padding-right: 12px
+		margin-bottom: 132px
+		@media screen and (min-width: 768px)
+			margin-top: 15px
+			width: 50%
+		@media screen and (min-width: 997px)
+			width: 33.333333%
+		@media screen and (min-width: 1350px)
+			width: $about-width
+		h5
+			font-size: 1.1rem
+			font-weight: 600
+			line-height: 1.3rem
+			margin: 10px 24px 0
+			min-height: 2.6rem
+			a
+				color: #575756
+				&:hover
+					color: $brand-color
+		p
+			color: $dark-gray
+			font-size: .85rem
+			//min-height: 48px
+			//min-height: 183px
+			padding-left: 20px
+			padding-right: 20px
+			text-align: justify
+		.item-background
+			background-color: #EDEDED
+			margin-top: -56px
+			min-height: 205px
+			position: relative
+			@media screen and (max-width: 768px)
+				margin-bottom: 50px
+			.content-p
+				padding-bottom: 30px
+			.btn
+				right: 10%
+				left: 10%
+				margin: 0 auto
+				bottom: -20px
+				position: absolute
+				//margin-bottom: 30px
+			.logo-icon
+				margin-top: -60px
+		&.item25
+			width: 25%
+			@media screen and (max-width: 1200px)
+				width: 50%
+			@media screen and (max-width: 600px)
+				width: 100%
+
+		//&:nth-child(5)
+		//	padding-right: 0
+		//	p, h5
+		//		padding-right: 28px
+
+.page-related
+	&.ppage
+		margin: 25px 20px 45px
+
+.custom-form
+	.wpcf7-not-valid-tip
+		padding: 0px
+	div.wpcf7-mail-sent-ok
+		border: none
+		padding: 15px 20px
+		font-size: 0.95rem
+		border-radius: 2px
+		color: #fff
+		background-color: #8EC043
+		font-family: "Titillium Web"
+	&.workwus
+		.row
+			margin-bottom: 25px
+		.wpcf7-form-control-wrap
+			select
+				display: block
+				background-color: $white
+				+border-radius($radius: 0px)
+				box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3)
+				color: darken($dark-gray, 5%)
+				display: block
+				border: none
+				font-size: .9rem
+				height: 2.3rem
+				padding: 5px 10px
+				text-transform: uppercase
+		.wpcf7-list-item
+			display: inline-block
+			float: left
+			position: relative
+			margin: 0 0.5em 0 0 !important
+			width: 100%
+			[type="checkbox"]:not(:checked),
+			[type="checkbox"]:checked
+				position: relative
+				top: 2px
+				left: 0px
+				visibility: visible
+			.wpcf7-list-item-label
+				position: relative
+				padding-left: 10px
+				cursor: pointer
+				display: inline-block
+				height: 25px
+				line-height: 25px
+				font-size: 1rem
+				-webkit-user-select: none
+				-moz-user-select: none
+				-khtml-user-select: none
+				-ms-user-select: none
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 18px
+					height: 18px
+					z-index: 0
+					border: none //2px solid #5a5a5a
+					border-radius: 1px
+					margin-top: 2px
+					transition: .2s
+		.wpcf7-form
+			button, input[type="button"], input[type="reset"], input[type="submit"]
+				background: #ff6d00 !important
+				border: none
+				+border-radius(0px)
+				color: $white
+				float: left
+				font-weight: 700
+				font-size: 14px
+				line-height: 14px
+				font-style: normal
+				box-shadow: none
+				text-shadow: none
+				margin-top: 15px
+				padding: 0 2rem
+
+
+//fix menu responsive
+nav#my-menu
+	//display: none
+	height: auto
+	ul
+		li
+			float: none
+
+
+// fix width twitter
+iframe.twitter-timeline[style]
+	width: 100% !important
+	min-width: 0 !important
+
+
+
+
+.link-mercado
+	color: $darker-green
+	font-size: 1rem
+	&:hover
+		color: $darker-gray
